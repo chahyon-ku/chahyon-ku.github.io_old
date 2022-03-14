@@ -2,7 +2,7 @@ main {
     text-align: center;
 }
 
-div {
-    width: 500px;
+section {
+    width: 800px;
     word-wrap: break-word;
 }
