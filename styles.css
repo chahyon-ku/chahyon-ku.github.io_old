@@ -11,7 +11,7 @@ body {
 main {
     margin: 50 auto;
     min-width: 400px;
-    max-width: 800px;
+    max-width: 850px;
     word-break: break-word;
 }
 
@@ -29,4 +29,14 @@ h2 {
 
 li {
     margin: 0 20;
+}
+
+img {
+    margin: auto;
+    display: block;
+}
+
+figcaption {
+    margin: auto;
+    display: block;
 }
