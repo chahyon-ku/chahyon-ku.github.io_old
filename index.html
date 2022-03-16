@@ -53,6 +53,8 @@
             "difference of offset guassian" (DOOG) filters and parallel edge/line counts to detect surfaces, planes, and vanishing points from the viewer's point of view.<br>
             <img src="image/CMU.gif" width="400px" margin="auto">
             <figcaption>Fig.1 - Hoiem et al's Visualization of CMU</figcaption>
+            Eigen et al (https://arxiv.org/abs/1406.2283) was among the first to utilize convolutional neural networks in solving depth estimation. To specify, it proposed
+            a "fine" model and a "coarse" model which combines depth estimations with different resolutions to produce good results.
         </section>
         <section>
             <h2>Shader Based Approach</h2>
@@ -67,7 +69,7 @@
             <img src="image/depth_linear.png" width="400px" margin="auto">
             <figcaption>Fig.4 - Linearized Depth. Still very coarse.</figcaption><br>
             I fed this into CNN based architectures and looked at the results. The first architecture I had split the image into 8 by 8 patches and had a CNN with a fully
-            connected layer at the top. The second architecture I had was fully convolutional. Here are their results.<br>
+            connected layer at the top. The second architecture I had was fully convolutional. PyTorch was used for the models. Here are their results.<br>
             <img src="image/patch.png" width="400px" margin="auto">
             <figcaption>Fig.5 - Patch Based.</figcaption><br>
             <img src="image/cnn.png" width="400px" margin="auto">
@@ -80,11 +82,17 @@
             image. Then, I will be able to optimize for the error-minimizing camera view, and I will be done.<br>
             In short, I needed to 1. create a way of judging if some block assignment is good 2. create a way of judging if all block assignments for a given camera view
             is good 3. optimize through all possible camera views.<br>
-            I was only able to produce the first part of the three step process, as described below.<br>
+            I was only able to produce the first part of the three step process. Given a manual input of camera-x-rotation, camera-y-rotation, cube-x-position,
+            cube-y-position, and cube-z-position, I can extract the texture of each side of the block by using homography transformations. This is done by using the glm
+            package for matrix operations along with opencv's implementaion of the RANSAC algorithm. Then, the extracted textures of each side are compared with pre-saved
+            templates to find the most similar template. The difference is just calculated as the squared distance of the images.
             <img src="image/demo.png" width="400px" margin="auto">
             <figcaption>Fig.7 - Demonstration of ImgToChunk.</figcaption><br>
         <section>
-            <h2>Next Steps</h2>
+            <h2>Results and Next Steps</h2>
+            I spent a significant portion of my work learning the details of computer graphics and homography, so I was not able to create a full working solution for
+            my problem. To specify, only the first step of the three-step process is available. Hence, my next step will be to create ways to propose probable block and
+            camera assignments.
         </section>
     </main>
 </body>
