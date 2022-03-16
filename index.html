@@ -74,6 +74,16 @@
             <figcaption>Fig.6 - Fully Convolutional.</figcaption><br>
         </section>
         <section>
+            <h2>Computer Graphics Based Approach</h2>
+            I soon realized that the depth map produced by the shader was not detailed enough to reproduce the 3D voxel structure of a Minecraft scene. I moved onto using
+            computer graphics/homography based methods. I proposed that given a camera view, I can infer the most probable blocks by producing some classifier for the
+            image. Then, I will be able to optimize for the error-minimizing camera view, and I will be done.<br>
+            In short, I needed to 1. create a way of judging if some block assignment is good 2. create a way of judging if all block assignments for a given camera view
+            is good 3. optimize through all possible camera views.<br>
+            I was only able to produce the first part of the three step process, as described below.<br>
+            <img src="image/demo.png" width="400px" margin="auto">
+            <figcaption>Fig.7 - Demonstration of ImgToChunk.</figcaption><br>
+        <section>
             <h2>Next Steps</h2>
         </section>
     </main>
