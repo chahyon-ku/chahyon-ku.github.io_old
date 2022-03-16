@@ -30,3 +30,8 @@ h2 {
 li {
     margin: 0 20;
 }
+
+img {
+    margin: auto;
+    display: block;
+}
