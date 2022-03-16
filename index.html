@@ -85,7 +85,8 @@
             I was only able to produce the first part of the three step process. Given a manual input of camera-x-rotation, camera-y-rotation, cube-x-position,
             cube-y-position, and cube-z-position, I can extract the texture of each side of the block by using homography transformations. This is done by using the glm
             package for matrix operations along with opencv's implementaion of the RANSAC algorithm. Then, the extracted textures of each side are compared with pre-saved
-            templates to find the most similar template. The difference is just calculated as the squared distance of the images.
+            templates to find the most similar template. The difference is just calculated as the squared distance of the images. I produced an interactive GUI using the
+            tkinter package, so that I am able to move my proposed block around with my keyboard.<br>
             <img src="image/demo.png" width="400px" margin="auto">
             <figcaption>Fig.7 - Demonstration of ImgToChunk.</figcaption><br>
         <section>
