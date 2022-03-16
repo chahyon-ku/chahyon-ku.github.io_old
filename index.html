@@ -15,6 +15,7 @@
                 <li>Should probably include substantial coding of your own but I encourage you to also use outside libraries/frameworks (pytorch, tensorflow, opencv, etc.)</li>
                 <li>Should be roughly equivalent in work to 2 homework in technical work/scope</li>
                 <li>Deliverable: Your final project presentation will be a website describing your project, and a 2-3 minute video. This summary should mention the problem setup, data used, techniques, etc. It should include a description of which components were from preexisting work (i.e. code from github) and which components were implemented for the project (i.e. new code, gathered dataset, etc).</li>
+            </ul>
         </section>
         <section>
             <h2>Initial Proposal</h2>
@@ -26,12 +27,26 @@
             which allows for custom shaders that can render grayscale depth view instead of the default RGB view.
         </section>
         <section>
+            <h2>Problem Description</h2>
+            I will explain the general problem of single image depth estimation and how my specific problem of Minecraft image depth estimation.<br>
+            According to Mertan et al, single image depth estimation is the process of inferring depth information from a single 2D image. It is one of the hardest problems
+            in depth estimation, because it does not make use of any temporal correlations (as in multi-image/video depth estimation), nor does it make use of any multi-view
+            (stereo) information. According to Foley and Maitlin, humans do this naturally through the use of about 7 monocular cues such as occlusion (closer object
+            covering farther object) or perspective (vanishing points and parallel planes).<br>
+            The biggest challenge in single image depth estimation is considered to be prior knowledge about the geometry of the object: the shape and the size. Humans are
+            great at recognizing objects, comparing them with previous knowledge of the object's size and shape, and putting it into perspective in a 3D space. Hence, many
+            systems tackling this problem makes use of statistical or machine learning methods to learn this knowledge from data.<br>
+            However, Minecraft does not have this challenge: all shapes and sizes are fixed. This greatly reduces the amount of "knowledge" the system would need to learn,
+            as the system would only need to learn to recognize perspective cues. Furthermore, as all block will be aligned in a perfect grid, more spacial information can
+            be inferred from the position of the blocks.
+        <section>
             <h2>Prior Works</h2>
             Single image depth estimation, like any other problems in computer vision, moved from hand-coded feature extractors from the early days to more neural network
             based models.<br>
             One of the earliest works, Automatic Photo Pop-up by Hoiem et al from 2005 (https://dhoiem.cs.illinois.edu/publications/popup.pdf), use methods such as
             "difference of offset guassian" (DOOG) filters and parallel edge/line counts to detect surfaces, planes, and vanishing points from the viewer's point of view.<br>
             <img src="image/CMU.gif" alt="CMU from Pop-up" width="400px">
+            <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
         </section>
         <section>
             <h2>Approaches</h2>
