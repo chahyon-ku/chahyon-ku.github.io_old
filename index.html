@@ -57,14 +57,13 @@
             My first approach was to use Shader Mod, a Minecraft mod that lets users attach custom shaders, to produce depth maps, grayscale images where the intensity of
             a pixel corresponds to its depth. Minecraft uses a old-school OpenGL shader system that saves the z-coordinates of the transformed coordinates into a texture
             called depthtex0, which can be sampled in the final fragment shader to produce the depth values. As these values were inverse scaled (so that it is more precise
-            when closer and coarser when farther), these values had to be linearized.
+            when closer and coarser when farther), these values had to be linearized.<br>
             <img src="image/color.png" width="400px">
-            <figcaption>Fig.2 - Color Render</figcaption>
+            <figcaption>Fig.2 - Color Render</figcaption><br>
             <img src="image/depth_vanilla.png" width="400px">
-            <figcaption>Fig.3 - Vanilla Depth. Barely anything is visible in this scale</figcaption>
-            <img src="image/depth.png" width="400px">
-            <figcaption>Fig.4 - Linearized Depth. Still very coarse.</figcaption>
-            <h3>1. Limitations of using shader generated depth data</h3>
+            <figcaption>Fig.3 - Vanilla Depth. Barely anything is visible in this scale</figcaption><br>
+            <img src="image/depth_linear.png" width="400px">
+            <figcaption>Fig.4 - Linearized Depth. Still very coarse.</figcaption><br>
         </section>
         <section>
             <h2>Next Steps</h2>
