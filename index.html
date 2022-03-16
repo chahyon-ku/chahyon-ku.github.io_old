@@ -10,6 +10,8 @@
         <h1>22wi CSE 455: ImgToChunk</h1>
         <section>
             <h2>Video Summary</h2>
+            <h2>GitHub Repo</h2>
+            https://github.com/chahyon1998/ImgToChunk
         </section>
         <section>
             <h2>Expectations</h2>
@@ -59,11 +61,17 @@
             called depthtex0, which can be sampled in the final fragment shader to produce the depth values. As these values were inverse scaled (so that it is more precise
             when closer and coarser when farther), these values had to be linearized.<br>
             <img src="image/color.png" width="400px" margin="auto">
-            <figcaption>Fig.2 - Color Render</figcaption><br>
+            <figcaption>Fig.2 - Color Render.</figcaption>
             <img src="image/depth_vanilla.png" width="400px" margin="auto">
             <figcaption>Fig.3 - Vanilla Depth. Barely anything is visible in this scale</figcaption><br>
             <img src="image/depth_linear.png" width="400px" margin="auto">
             <figcaption>Fig.4 - Linearized Depth. Still very coarse.</figcaption><br>
+            I fed this into CNN based architectures and looked at the results. The first architecture I had split the image into 8 by 8 patches and had a CNN with a fully
+            connected layer at the top. The second architecture I had was fully convolutional. Here are their results.<br>
+            <img src="image/patch.png" width="400px" margin="auto">
+            <figcaption>Fig.5 - Patch Based.</figcaption><br>
+            <img src="image/cnn.png" width="400px" margin="auto">
+            <figcaption>Fig.6 - Fully Convolutional.</figcaption><br>
         </section>
         <section>
             <h2>Next Steps</h2>
