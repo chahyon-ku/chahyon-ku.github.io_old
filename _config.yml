@@ -18,22 +18,21 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Your awesome title
-email: your-email@example.com
+title: Chahyon Ku
+email: chahyon.ku@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Chahyon Ku
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://chahyon-ku.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: ChahyonKu
+github_username:  chahyon-ku
 
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -54,3 +53,37 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+include: ["_pages"]
+
+defaults:
+  # _pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      classes: wide
+
+
+author:
+  name: "Chahyon Ku"
+  bio: "Master Student in Robotics <br/> University of Minnesota, Twin Cities"
+  avatar: "/assets/images/avatar.jpg"
+  links:
+    - label: "https://chahyon-ku.github.io"
+      icon: "fas fa-fw fa-link"
+      url: "https://chahyon-ku.github.io"
+    - label: "https://github.com/chahyon-ku"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/chahyon-ku"
+    - label: "chahyon.ku@gmail.com"
+      icon: "fas fa-fw fa-envelope"
+      url: "mailto:chahyon.ku@gmail.com"
+    - label: "ChahyonKu"
+      icon: "fab fa-fw fa-twitter"
+      url: "https://twitter.com/ChahyonKu"
+    - label: "Curriculum Vitae"
+      icon: "fas fa-fw fa-file"
+      url: "https:/chahyon-ku.github.io/assets/docs/cv.pdf"

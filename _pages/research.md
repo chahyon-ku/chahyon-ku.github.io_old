@@ -1,0 +1,77 @@
+---
+title: Research
+permalink: /research/
+---
+<details>
+    <summary>
+        Comparison of ICP, GDRNPP, kPAM, and R3M for Cap-the-Bottle Task
+        <span style="float:right;">
+            12/2022 - 03/2023
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/cap_bottle"><i class="fab fa-fw fa-github"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        Behavioral Cloning of Cap-the-Bottle Task
+        <span style="float:right;">
+            09/2022 - 12/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/cap_bc"><i class="fab fa-fw fa-github"></i></a>
+        <a href="https://github.com/chahyon-ku/cap_data"><i class="fab fa-fw fa-github"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        Translation-Based Data Augmentation for Named Entity Recognition
+        <span style="float:right;">
+            09/2022 - 12/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/polygots"><i class="fab fa-fw fa-github"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        Primate Pose Estimation with <em>ViTPose</em>, Keypoint-Aligned <em>RandAugment</em>, and Specie Context Embeddings
+        <span style="float:right;">
+            09/2022 - 12/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/openmonkeychallenge"><i class="fab fa-fw fa-github"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        University of Washington+Amazon Robot Manipulation
+        <span style="float:right;">
+            06/2022 - 08/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/aurmr_perception-master"><i class="fab fa-fw fa-github"></i></a>
+        <a href="https://github.com/chahyon-ku/aurmr_perception-master"><i class="fas fa-fw fa-link"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        Reproducing <em>Self-Supervised Quality Estimation for Machine Translation</em>
+        <span style="float:right;">
+            04/2022 - 06/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/CSE-481N"><i class="fab fa-fw fa-github"></i></a>
+        <a href="https://github.com/chahyon-ku/CSE-481N"><i class="fas fa-fw fa-link"></i></a>
+    </summary>
+</details>
+
+<details>
+    <summary>
+        Evaluating <em>SORNet</em> on a Geometric and Spatial Reasoning Dataset
+        <span style="float:right;">
+            03/2022 - 06/2022
+        </span> <br/>
+        <a href="https://github.com/chahyon-ku/sornet-geospa"><i class="fab fa-fw fa-github"></i></a>
+        <a href="https://chahyon-ku.github.io/sornet-geospa/"><i class="fas fa-fw fa-link"></i></a>
+    </summary>
+</details>
